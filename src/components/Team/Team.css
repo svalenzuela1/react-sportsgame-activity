@@ -1,0 +1,8 @@
+.logoSrc{
+    height: 200px;
+    width: 200px;
+}
+
+.teamName, .teamScores, .teamShots{
+    text-align: center;
+}
