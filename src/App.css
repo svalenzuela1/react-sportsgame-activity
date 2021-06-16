@@ -6,13 +6,13 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+/* 
 .allTeams{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

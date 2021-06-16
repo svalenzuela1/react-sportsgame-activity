@@ -1,7 +1,8 @@
 import './App.css';
 
 import React, { Component } from 'react';
-import Team from './components/Team/Team';
+//import Team from './components/Team/Team';
+import Game from './components/Game/Game';
 
 class App extends Component {
 
@@ -34,10 +35,11 @@ class App extends Component {
     return (
       <div className="allTeams">
         
-        <Team team={raccoons}/>
+        {/* <Team team={raccoons}/>
         <Team team={squirrels}/>
         <Team team={bunnies}/>
-        <Team team={hounds}/> 
+        <Team team={hounds}/>  */}
+        <Game venue={"Some place"} home={hounds} visitors={bunnies}/>
 
       </div>
     );

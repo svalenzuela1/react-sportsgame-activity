@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Team.css'
+
 class Team extends Component {
 
     constructor(props){
@@ -12,7 +13,15 @@ class Team extends Component {
 
     render() {
 
-        const {team} = this.props 
+        const {team} = this.props
+        
+        const handleShots = () => {
+            //will handle the change of shots and scores
+            this.setState(currentState => {
+                //increment shots here
+
+            })
+        }
         return (
             <div>
                 <div className="teamName align-text">
@@ -34,12 +43,18 @@ class Team extends Component {
                 </div>
 
                 <div className="teamPercentile align-text">
-                    {this.state.scores > 0 ? 
-                    (<p>Shot Percentile: 
-                    {this.state.shots/this.state.scores}</p>): 
+                    {this.state.shots <= 0 ?
 
-                     (<p></p>)}
+                     (<p></p>): 
+
+                     (<p>Shot Percentile: 
+                        {this.state.shots/this.state.scores * 100}</p>) }
                     
+                </div>
+
+                <div className="teamBtn align-text">
+                    <button>SHOOT!</button>
+
                 </div>
             </div>
         );

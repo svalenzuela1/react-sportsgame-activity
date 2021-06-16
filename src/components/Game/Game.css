@@ -1,0 +1,32 @@
+.game-divs{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.versus{
+    font-family: againtsregular, oswald, sans-serif;
+    font-size: 500%;
+    color: #fc0;
+    text-shadow: 2px 2px 0 black;
+    font-size: 6em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+button{
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #fc0;
+    border: 0;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    box-shadow: 2px 2px 0 black;
+}
