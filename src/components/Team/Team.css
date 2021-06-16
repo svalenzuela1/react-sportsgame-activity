@@ -3,6 +3,6 @@
     width: 200px;
 }
 
-.teamName, .teamScores, .teamShots{
+.align-text{
     text-align: center;
 }
